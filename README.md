@@ -82,7 +82,7 @@ Create ordering buttons:
 ```
 Important: Only work with font awesome.
 
-Call accordion fution
+Call accordion funtion
 ---------------------
 ```javascript
 <script>
