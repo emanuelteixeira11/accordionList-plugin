@@ -6,7 +6,8 @@ This plugin has the functionality to organize several sections, arranged by titl
 
 ![alt text](http://emanuelteixeira.16mb.com/plugin/img/list.png "Logo Title Text 1")
 ![alt text](http://emanuelteixeira.16mb.com/plugin/img/list-open.png "Logo Title Text 1")
-##Installation
+Installation
+-------------
 **Call the jquery library**
 
 *From web:*
@@ -36,8 +37,8 @@ This plugin has the functionality to organize several sections, arranged by titl
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 ```
 
-##Usage
-
+Usage
+-------
 Create container section:
 ```javascript
 <section id="accordion">
@@ -51,3 +52,46 @@ Create content title:
 ```javascript
 <h3 data-type="accordion-section-title">Example</h3>
 ```
+Create inside content:
+```javascript
+<div data-type="accordion-section-body">
+```
+
+####Extra Resources
+
+Create search box:
+```javascript
+<input type="text" placeholder="search in list" name="search" id="search" data-type="accordion-search">
+```
+Important: For search into contents use *"keyword"*. If you search without *""* find on titles.
+
+Create filter:
+```javascript
+<select data-type="accordion-filter">
+    <option value="default">all</option>
+    <option value="type1">Type 1</option>
+    <option value="type2">Type 2</option>
+</select>
+```
+Important: use *default* value for search *all*.
+
+Create ordering buttons:
+```javascript
+<button data-type="accordion-ordering" ordering="asc"></button>
+<button data-type="accordion-ordering" ordering="desc"></button>
+```
+Important: Only work with font awesome.
+
+Call accordion fution
+---------------------
+```javascript
+<script>
+    $(document).ready(function () {
+        $("#accordion").accordion();
+    });
+</script>
+```
+
+Author
+------
+[Emanuel Teixeira](https://github.com/emanuelteixeira11)
