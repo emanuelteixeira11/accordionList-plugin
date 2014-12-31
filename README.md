@@ -30,7 +30,7 @@ Installation
 <script src="js/accordion.js""></script>
 ```
 
-**For add more resources add font awesome** 
+**To add more resources add font awesome** 
 
 *From web:*
 ```javascript
