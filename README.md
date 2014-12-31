@@ -23,7 +23,7 @@ Installation
 
 *From web:*
 ```javascript
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="http://emanuelteixeira.16mb.com/plugin/js/accordion.js"></script>
 ```
 *From local path:*
 ```javascript
