@@ -47,6 +47,31 @@
         .inline {
             display: inline;
         }
+        .btn-ordering {
+            margin: 0px 10px 0px 10px;
+            border: 1px solid inherit;
+            background-color: #e0e0e0;
+            min-width: 80px;
+            border-radius: 4px;
+        }
+        .btn-ordering:hover {
+            border-style: inset;
+            background-color: #bcbcbc;
+        }
+        #btn-div {
+            margin-top: 40px;
+            text-align: right;
+        }
+        [data-type="accordion-search"] {
+            min-height: 15px;
+            border-radius: 4px;
+        }
+        [data-type="accordion-filter"] {
+            min-height: 15px;
+            border-radius: 0px;
+            min-width: 120px;
+            height: 20px;
+        }
     </style>
 </head>
 
@@ -54,31 +79,38 @@
     <h1>Demo: <i>plugin</i> accordion</h1>
     <p class="inline">Search in List:</p>
     <input type="text" placeholder="search in list" name="search" id="search" data-type="accordion-search">
+    <br><br>
+    <p class="inline">Filter List:</p>
+    <select name="filter" id="filter" data-type="accordion-filter">
+        <option value="default">all</option>
+        <option value="type1">Type 1</option>
+        <option value="type2">Type 2</option>
+    </select>
     <section id="accordion">
-        <div data-type="accordion-section">
-            <h3 data-type="accordion-section-title">Section 1</h3>
+        <div data-type="accordion-section" data-filter="type1">
+            <h3 data-type="accordion-section-title">Section 4</h3>
             <div class="accordion-content" data-type="accordion-section-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae veritatis odit laudantium. Cum illum repudiandae iure beatae laboriosam excepturi quia. Alias iure voluptate voluptatum, cumque unde blanditiis sunt rem dicta! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias eligendi enim reprehenderit quasi minus! Quos consequuntur minus similique laboriosam rerum est dolorem, obcaecati, fugit voluptates quia, a reprehenderit quis magnam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ratione fugiat eveniet. Sed in voluptas aut corporis, inventore earum delectus eum aperiam doloribus, modi, expedita minus. Dolore reprehenderit, laborum perspiciatis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur minus repellat totam quasi molestias obcaecati, qui ratione quibusdam beatae similique voluptatum suscipit harum doloribus eaque quidem doloremque rerum quia deserunt.</div>
         </div>
         <div data-type="accordion-section">
-            <h3 data-type="accordion-section-title">Section 2</h3>
+            <h3 data-type="accordion-section-title">Section 1</h3>
             <div class="accordion-content" data-type="accordion-section-body">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae veritatis odit laudantium. Cum illum repudiandae iure beatae laboriosam excepturi quia. Alias iure voluptate voluptatum, cumque unde blanditiis sunt rem dicta! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias eligendi enim reprehenderit quasi minus! Quos consequuntur minus similique laboriosam rerum est dolorem, obcaecati, fugit voluptates quia, a reprehenderit quis magnam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ratione fugiat eveniet. Sed in voluptas aut corporis, inventore earum delectus eum aperiam doloribus, modi, expedita minus. Dolore reprehenderit, laborum perspiciatis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur minus repellat totam quasi molestias obcaecati, qui ratione quibusdam beatae similique voluptatum suscipit harum doloribus eaque quidem doloremque rerum quia deserunt.
             </div>
         </div>
-        <div data-type="accordion-section">
+        <div data-type="accordion-section" data-filter="type2">
             <h3 data-type="accordion-section-title">Section 3</h3>
             <div class="accordion-content" data-type="accordion-section-body">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae veritatis odit laudantium. Cum illum repudiandae iure beatae laboriosam excepturi quia. Alias iure voluptate voluptatum, cumque unde blanditiis sunt rem dicta! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias eligendi enim reprehenderit quasi minus! Quos consequuntur minus similique laboriosam rerum est dolorem, obcaecati, fugit voluptates quia, a reprehenderit quis magnam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ratione fugiat eveniet. Sed in voluptas aut corporis, inventore earum delectus eum aperiam doloribus, modi, expedita minus. Dolore reprehenderit, laborum perspiciatis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur minus repellat totam quasi molestias obcaecati, qui ratione quibusdam beatae similique voluptatum suscipit harum doloribus eaque quidem doloremque rerum quia deserunt.
             </div>
         </div>
-        <div data-type="accordion-section">
-            <h3 data-type="accordion-section-title">Section 4</h3>
+        <div data-type="accordion-section" data-filter="type2">
+            <h3 data-type="accordion-section-title">Section 2</h3>
             <div class="accordion-content" data-type="accordion-section-body">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae veritatis odit laudantium. Cum illum repudiandae iure beatae laboriosam excepturi quia. Alias iure voluptate voluptatum, cumque unde blanditiis sunt rem dicta! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias eligendi enim reprehenderit quasi minus! Quos consequuntur minus similique laboriosam rerum est dolorem, obcaecati, fugit voluptates quia, a reprehenderit quis magnam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ratione fugiat eveniet. Sed in voluptas aut corporis, inventore earum delectus eum aperiam doloribus, modi, expedita minus. Dolore reprehenderit, laborum perspiciatis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur minus repellat totam quasi molestias obcaecati, qui ratione quibusdam beatae similique voluptatum suscipit harum doloribus eaque quidem doloremque rerum quia deserunt.
             </div>
         </div>
-        <div data-type="accordion-section">
-            <h3 data-type="accordion-section-title">Section 5</h3>
+        <div data-type="accordion-section" data-filter="type1">
+            <h3 data-type="accordion-section-title">Section 7</h3>
             <div class="accordion-content" data-type="accordion-section-body">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae veritatis odit laudantium. Cum illum repudiandae iure beatae laboriosam excepturi quia. Alias iure voluptate voluptatum, cumque unde blanditiis sunt rem dicta! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias eligendi enim reprehenderit quasi minus! Quos consequuntur minus similique laboriosam rerum est dolorem, obcaecati, fugit voluptates quia, a reprehenderit quis magnam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ratione fugiat eveniet. Sed in voluptas aut corporis, inventore earum delectus eum aperiam doloribus, modi, expedita minus. Dolore reprehenderit, laborum perspiciatis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur minus repellat totam quasi molestias obcaecati, qui ratione quibusdam beatae similique voluptatum suscipit harum doloribus eaque quidem doloremque rerum quia deserunt.
             </div>
@@ -89,8 +121,17 @@
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae veritatis odit laudantium. Cum illum repudiandae iure beatae laboriosam excepturi quia. Alias iure voluptate voluptatum, cumque unde blanditiis sunt rem dicta! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias eligendi enim reprehenderit quasi minus! Quos consequuntur minus similique laboriosam rerum est dolorem, obcaecati, fugit voluptates quia, a reprehenderit quis magnam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ratione fugiat eveniet. Sed in voluptas aut corporis, inventore earum delectus eum aperiam doloribus, modi, expedita minus. Dolore reprehenderit, laborum perspiciatis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur minus repellat totam quasi molestias obcaecati, qui ratione quibusdam beatae similique voluptatum suscipit harum doloribus eaque quidem doloremque rerum quia deserunt.
             </div>
         </div>
+        <div data-type="accordion-section" data-filter="type1">
+            <h3 data-type="accordion-section-title">Section 5</h3>
+            <div class="accordion-content" data-type="accordion-section-body">
+                Desde muito cedo que defini o objectivo de me licenciar na área da informática. O destino levou-me até a cidade alentejana de Beja onde ingressei na ESTIG, onde não só me desenvolvi intelectualmente mas também a nível pessoal. Considero-me uma pessoa trabalhadora, sempre pronta para novos objectivos. Não gosto de trabalhar para ficar apenas funcional, tem de ficar perto do perfeito. Sou pontual, responsável e dinâmico. Nunca perdi nem um par de meias nas aulas de educação física. Não gosto de ficar uma quinta à noite agarrado ao computador, assim como não gosto de faltar aos meus compromissos na sexta de manhã.
+            </div>
+        </div>
     </section>
-
+    <div id="btn-div">
+        <button data-type="accordion-ordering" ordering="asc" class="btn-ordering"></button>
+        <button data-type="accordion-ordering" ordering="desc" class="btn-ordering"></button>
+    </div>
     <script>
         $(document).ready(function () {
             $("#accordion").accordion();
