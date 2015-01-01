@@ -30,6 +30,11 @@ Installation
 <script src="js/accordion.js""></script>
 ```
 
+**Call acordionList style sheet**
+```javascript
+<link href="css/style.css" rel="stylesheet" type="text/css">
+```
+
 **To add more resources add font awesome** 
 
 *From web:*
