@@ -109,5 +109,3 @@
         return this;
     };
 })(jQuery);
-
-function dragEvent(event) {}
